@@ -1,0 +1,150 @@
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  transform: scale(0);
+}
+
+.modal.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(22, 39, 62, 0.7);
+  transform: scale(1);
+}
+
+.modal__inner {
+  max-width: 767px;
+  width: 100%;
+  min-width: 250px;
+  height: 512px;
+  background-color: #fff;
+  padding: 30px;
+  margin: 50px 0 0 76px;
+  border-radius: 50px;
+  transition: all 1s;
+  opacity: 0;
+}
+
+.modal.active .modal__inner {
+  opacity: 1;
+}
+
+.modal__inner {
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+
+  padding: 10px;
+  height: 35px;
+}
+
+.modal__content {
+  margin-left: 185px;
+}
+
+.modal__title {
+  font-size: 25px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  font-family: 'DINPro';
+  margin-top: 10px;
+}
+
+.modal__name {
+  font-size: 92px;
+  display: block;
+  letter-spacing: 12px;
+  font-family: 'Gilroy-Regular';
+  margin-left: -5px;
+}
+
+.modal__title .text__bold {
+  margin-left: -30px;
+}
+
+.modal__slider {
+  margin-top: 20px;
+  max-width: 570px;
+  width: 100%;
+}
+
+.slide__first,
+.slide__second {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slide__first.active,
+.slide__second.active {
+  opacity: 1;
+}
+
+.slide__text {
+  margin-bottom: 16px;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  font-family: 'DINPro';
+}
+
+.slide__text span {
+  margin-bottom: 6px;
+  display: block;
+  font-size: 24px;
+  font-family: Gilroy-Extrabold;
+  font-weight: 800;
+  color: #8cc9e8;
+}
+
+.slider__control {
+  margin: 52px 0 0 -5px;
+}
+
+.slider__content {
+  position: relative;
+  height: 265px;
+  overflow: hidden;
+}
+
+.btn__prev,
+.btn__next {
+  background: transparent;
+  border: none;
+  height: 18px;
+}
+
+.btn__prev img,
+.btn__next img {
+  height: 100%;
+}
+
+.control_1,
+.control_2 {
+  width: 6px;
+  height: 6px;
+  border: 2px solid #000;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+.control_1 {
+  margin: 0 6px 3px 10px;
+}
+
+.control_2 {
+  margin: 0 10px 3px 0;
+}
+
+.control_1.active,
+.control_2.active {
+  background: #fc6da9;
+  border-color: #fc6da9;
+}

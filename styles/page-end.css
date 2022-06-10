@@ -1,0 +1,196 @@
+.bottle__inner {
+  margin: 163px 0 0 227px;
+}
+
+.bottle__name {
+  font-size: 92px;
+  display: block;
+  letter-spacing: 12px;
+  font-family: 'Gilroy-Regular';
+  margin-left: -5px;
+}
+
+.bottle__title .text__bold {
+  margin-left: -30px;
+}
+
+.bottle__title {
+  margin-left: 125px;
+  font-size: 25px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  font-family: 'DINPro';
+}
+
+.bottle__blocks {
+  display: flex;
+  flex-direction: row;
+  margin-top: 68px;
+}
+
+.block__left,
+.block__right {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.block__left {
+  width: 414px;
+  padding: 48px 40px 14px 125px;
+  height: 265px;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 5.446px 8.387px 232.5px 17.5px rgba(157, 185, 198, 0.39);
+}
+
+.icon {
+  position: absolute;
+}
+
+.icon__left {
+  top: -31px;
+  left: 123px;
+  height: 64px;
+}
+
+.icon__right {
+  top: -22px;
+  left: 39px;
+  height: 57px;
+}
+
+.block__right {
+  margin-left: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.block__calendar {
+  width: 140px;
+  height: 93px;
+  padding: 48px 82px 14px 40px;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 5.446px 8.387px 232.5px 17.5px rgb(157 185 198 / 39%);
+}
+
+.block__text {
+  font-size: 26px;
+  letter-spacing: -0.5px;
+  line-height: 30px;
+  font-family: 'DINPro';
+}
+
+.block__right .btn {
+  width: 260px;
+}
+
+/* bubbles position */
+
+.bubble__blue-1 {
+  position: absolute;
+  top: 68px;
+  left: 198px;
+  height: 35px;
+  z-index: 3;
+
+  animation: move_bubble 30s linear infinite reverse;
+}
+
+.bubble__blue-2 {
+  position: absolute;
+  top: 154px;
+  left: 183px;
+  z-index: 10;
+  height: 70px;
+
+  animation: move_bubble 10s linear infinite;
+}
+
+.bubble__blue-3 {
+  position: absolute;
+  bottom: 280px;
+  left: 10px;
+  height: 34px;
+  z-index: 3;
+
+  animation: changeScale 3s linear infinite reverse;
+}
+
+.bubble__blue-4 {
+  position: absolute;
+  bottom: 116px;
+  left: 241px;
+  height: 62px;
+  z-index: 3;
+
+  animation: move_bubble 7s linear infinite reverse;
+}
+
+.bubble__blue-5 {
+  position: absolute;
+  bottom: -65px;
+  left: 193px;
+  z-index: 10;
+  height: 133px;
+
+  animation: changeScale 10s linear infinite;
+}
+
+.bubble__pink-1 {
+  position: absolute;
+  top: 213px;
+  left: 77px;
+  height: 34px;
+  z-index: 3;
+
+  animation: move_bubble 7s linear infinite reverse;
+}
+
+.bubble__pink-2 {
+  position: absolute;
+  top: 317px;
+  left: 186px;
+  height: 112px;
+  z-index: 3;
+
+  animation: move_bubble 20s linear infinite;
+}
+
+.bubble__pink-3 {
+  position: absolute;
+  bottom: 139px;
+  left: 25px;
+  z-index: 10;
+  height: 74px;
+  transform: rotate(70deg);
+
+  animation: move_bubble 15s linear infinite;
+}
+
+.bottle__bg {
+  position: absolute;
+  bottom: 0px;
+  left: 47px;
+  z-index: 5;
+  height: 689px;
+}
+
+@keyframes move_bubble {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(20px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}

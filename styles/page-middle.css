@@ -1,0 +1,113 @@
+.scroll__page {
+  margin: 128px 130px 85px 68px;
+}
+
+.scroll__title {
+  font-size: 28px;
+  letter-spacing: 1.1px;
+  font-family: 'DINPro';
+  text-transform: uppercase;
+}
+
+.scroll__title span {
+  display: block;
+}
+
+.scroll__content {
+  margin: 68px 0 0;
+  position: relative;
+}
+
+.scroll__container {
+  overflow-y: scroll;
+  padding-left: 60px;
+  max-width: 730px;
+  max-height: 395px;
+  direction: rtl;
+}
+
+.scroll__wrap {
+  position: absolute;
+  top: -25px;
+  left: 50px;
+  z-index: -1;
+  width: 705px;
+  height: 397px;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 5.446px 8.387px 232.5px 17.5px rgb(157 185 198 / 39%);
+  padding: 35px 35px 15px;
+}
+
+.scroll__text {
+  font-size: 20px;
+  line-height: 30px;
+  direction: ltr;
+}
+
+.scroll__container::-webkit-scrollbar {
+  width: 22px;
+}
+.scroll__container::-webkit-scrollbar-track {
+  background: #000;
+  border: 8px solid transparent;
+  background-clip: content-box;
+  border-radius: 50px;
+}
+.scroll__container::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: url('../images/scroll-btn.png') no-repeat top;
+}
+
+.scroll__text span {
+  font-weight: 800;
+}
+
+.pink_3 {
+  position: absolute;
+  left: 338px;
+  top: 229px;
+  height: 143px;
+  z-index: -2;
+  transform: rotate(26deg);
+}
+
+.pink_4 {
+  position: absolute;
+  left: 557px;
+  top: 179px;
+  height: 96px;
+  opacity: 0.5;
+  z-index: -2;
+  transform: rotate(26deg);
+}
+
+.pink_5 {
+  position: absolute;
+  left: 693px;
+  top: 120px;
+  height: 55px;
+  opacity: 0.5;
+  z-index: -2;
+  transform: rotate(26deg);
+}
+
+.pink_6 {
+  position: absolute;
+  left: 870px;
+  top: 496px;
+  height: 96px;
+  opacity: 0.5;
+  z-index: 10;
+  transform: rotate(26deg);
+}
+
+.pink_7 {
+  position: absolute;
+  left: 883px;
+  top: 553px;
+  height: 39px;
+  opacity: 0.5;
+  z-index: -2;
+  transform: rotate(26deg);
+}

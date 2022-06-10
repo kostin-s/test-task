@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: local('Gilroy-Light'), url('../fonts/Gilroy-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: local('Gilroy-Regular'), url('../fonts/Gilroy-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Gilroy-Extrabold';
+  src: local('Gilroy-Extrabold'), url('../fonts/Gilroy-Extrabold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'DINPro';
+  src: local('DINPro'), url('../fonts/DINPro.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Circe-Regular';
+  src: local('Circe-Regular'), url('../fonts/Circe-Regular.woff2') format('woff2');
+}
